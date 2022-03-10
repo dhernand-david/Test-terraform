@@ -27,6 +27,6 @@ provider "azurerm" {
 
 // Resource Group
 resource "azurerm_resource_group" "resource-group" {
-  name     = "jenkins"
+  name     = "jenkins22"
   location = "West Europe"
 }
