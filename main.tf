@@ -5,6 +5,14 @@ terraform {
       version = "~>2.0"
     }
   }
+    backend "azurerm" {
+        resource_group_name  = "dhernand"
+        storage_account_name = "dhernandsta"
+        container_name       = "tstate"
+        key                  = "terraformjenkins.tfstate"
+        access_key           = "oGhyAhioABvnJJJPLe/ag4j2V0MTRt0+Er1oj7h2mn8Civ+miphqvbdlXTESKg4OiCtRf4yRsqn7kcsbcdZGBg=="
+    }
+
 }
 
 # Configure the Microsoft Azure Provider
@@ -19,6 +27,6 @@ provider "azurerm" {
 
 // Resource Group
 resource "azurerm_resource_group" "resource-group" {
-  name     = "dhernand_terraformbbbb"
+  name     = "jenkins"
   location = "West Europe"
 }
