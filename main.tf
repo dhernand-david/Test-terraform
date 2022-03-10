@@ -19,6 +19,6 @@ provider "azurerm" {
 
 // Resource Group
 resource "azurerm_resource_group" "resource-group" {
-  name     = "dhernand_terraform22"
+  name     = "dhernand_terraformbbbb"
   location = "West Europe"
 }
